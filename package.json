@@ -1,15 +1,15 @@
 {
   "private": true,
-  "name": "gooker",
+  "name": "renrengoo",
   "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "description": "ai guo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "hglf <hgleifeng@qq.com>",
-  "license": "MIT",
+  "license": "Apache2.0",
   "dependencies": {
     "prettier": "^1.18.2"
   }
