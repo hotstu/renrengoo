@@ -37,11 +37,12 @@ async function gatherResponse(response) {
   } else if (contentType.includes("text/html")) {
     return replace(await response.text());
   } else {
-    return await response.body;
+    return response.body;
   }
 }
 
 async function replace(html) {
-  return html.replace(targetMatch, host);
+  return html.replace(targetMatch, host)
+    .replace(/developer\.android\.com/g, "a.hglf.workers.dev");
 }
 
