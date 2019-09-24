@@ -1,6 +1,7 @@
-const someHost = "https://www.google.com";
+const someHost = "www.google.com";
+const targetMatch = /www\.google\.com/g;
 //replace this with you own subdomain!! 替换为你自己申请的subdomain!!
-const host = "https://_._.workers.dev";
+const host = "_._.workers.dev";
 
 async function handleRequest(request) {
   const { url: rawUrl } = request;
@@ -41,6 +42,6 @@ async function gatherResponse(response) {
 }
 
 async function replace(html) {
-  return html.replace(someHost, host);
+  return html.replace(targetMatch, host);
 }
 
